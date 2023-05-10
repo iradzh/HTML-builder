@@ -17,7 +17,7 @@ fs.readdir(folderPath, (err, files) => {
         return;
       }
       if (stats.isFile()) {
-        console.log(file);
+        console.log(`${file} - ${stats.size} bytes`);
       }
     });
   });
